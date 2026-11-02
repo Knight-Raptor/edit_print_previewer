@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+edit_print_previewer/__init__.py
+edit_print_previewer/api_editable_print.py
+edit_print_previewer/editable_print.py
+edit_print_previewer/hooks.py
+edit_print_previewer/install.py
+edit_print_previewer.egg-info/PKG-INFO
+edit_print_previewer.egg-info/SOURCES.txt
+edit_print_previewer.egg-info/dependency_links.txt
+edit_print_previewer.egg-info/not-zip-safe
+edit_print_previewer.egg-info/requires.txt
+edit_print_previewer.egg-info/top_level.txt
+edit_print_previewer/public/css/editable_print.css
+edit_print_previewer/public/js/editable_print.js

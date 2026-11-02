@@ -1,0 +1,7 @@
+include edit_print_previewer/public/js/editable_print.js
+include edit_print_previewer/public/css/editable_print.css
+include edit_print_previewer/edit_print_previewer/__init__.py
+include edit_print_previewer/edit_print_previewer/api_editable_print.py
+include edit_print_previewer/edit_print_previewer/editable_print.py
+include edit_print_previewer/edit_print_previewer/hooks.py
+include edit_print_previewer/edit_print_previewer/setup.py

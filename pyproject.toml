@@ -1,0 +1,8 @@
+[project]
+name = "edit_print_previewer"
+version = "1.0.0"
+description = "Generic Editable Print Preview for any DocType"
+authors = [{name = "Aliasgar", email = "aliasgar.c@smbsolutionkwt.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = ["frappe"]

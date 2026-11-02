@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: edit_print_previewer
+Version: 1.0.0
+Summary: Generic Editable Print Preview for any DocType
+Author: Aliasgar
+Author-email: Aliasgar <aliasgar.c@smbsolutionkwt.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: frappe
+Dynamic: author

@@ -1,0 +1,98 @@
+/* Property Management - Editable Print Preview (Rent Contract)
+   Editor toolbar and editor-specific styling. */
+
+/* Toolbar above the editable preview. */
+.editable-print-toolbar {
+	display: flex;
+	align-items: center;
+	gap: 12px !important;
+	flex-wrap: wrap;
+	padding: 10px 14px !important;
+	margin-bottom: 10px !important;
+	border-bottom: 1px solid #d1d8dd;
+	background: #f7f8fa;
+}
+
+/* Individual toolbar controls: force spacing so buttons are not clingy. */
+.editable-print-toolbar select,
+.editable-print-toolbar .editable-print-load-btn,
+.editable-print-toolbar .editable-print-image-btn,
+.editable-print-toolbar .editable-print-print-btn {
+	margin-right: 8px !important;
+}
+.editable-print-toolbar .editable-print-print-btn {
+	margin-right: 0 !important;
+}
+
+/* Editor area surrounding the iframe - full height for full-screen editing. */
+.editable-print-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 240px);
+}
+.editable-print-editor {
+	flex: 1;
+	overflow: auto;
+	background: #ffffff;
+	min-height: 400px;
+}
+#editable-print-iframe {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: 1px solid #d1d8dd;
+}
+
+/* Hide editor UI when printing. */
+@media print {
+	.editable-print-toolbar,
+	.editable-print-toolbar * {
+		display: none !important;
+	}
+	.editable-print-wrapper {
+		height: auto;
+	}
+	.editable-print-editor {
+		height: auto;
+		overflow: visible;
+	}
+	/* Keep the rendered document visible while printing. */
+	#editable-document {
+		visibility: visible !important;
+		display: block !important;
+	}
+	/* Remove any iframe border from printed output. */
+	#editable-print-iframe {
+		border: none !important;
+		box-shadow: none !important;
+	}
+}
+
+/* Inline formatting buttons in the top toolbar. */
+.editable-print-format-group {
+	display: inline-flex !important;
+	gap: 6px !important;
+	align-items: center !important;
+}
+.editable-print-format-group .btn-xs {
+	padding: 3px 7px !important;
+	font-size: 12px !important;
+	border: 1px solid #d1d8dd !important;
+	background: #fff !important;
+	cursor: pointer;
+	border-radius: 3px;
+	min-width: 26px;
+	text-align: center;
+	margin: 0 2px !important;
+}
+.editable-print-format-group .btn-xs:hover {
+	background: #f7f8fa !important;
+}
+.editable-print-format-group .btn-xs:active {
+	background: #e9ecef !important;
+}
+
+/* Hide the native file input; triggered by the Image button. */
+.editable-print-image-input {
+	display: none !important;
+}
